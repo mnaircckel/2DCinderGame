@@ -6,11 +6,12 @@
 
 Player::Player()
 {
-
+	Character();
 	sprite = loadImage(app::loadAsset("doctor.png"));
 	location = Vec2f(400, 300);
 	velocity = Vec2f(0, 0);
 	acceleration = Vec2f(0, 0);
+	health = 100.0;
 
 }
 

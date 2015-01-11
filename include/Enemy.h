@@ -2,10 +2,10 @@
 #include "cinder/gl/gl.h"
 #include "Character.h"
 #include "InputHandler.h"
-class Player : public Character
+class Enemy : public Character
 {
 public:
-	Player();
+	Enemy();
 	float health;
-	void getInput(InputHandler input);
+	void attack();
 };

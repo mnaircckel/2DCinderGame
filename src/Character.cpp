@@ -20,5 +20,5 @@ void Character::update(){
 
 
 void Character::draw(Camera2D camera){
-	gl::drawSolidCircle(location+camera.location,15.0f);
+	gl::draw(sprite,location+camera.location);
 }
