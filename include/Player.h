@@ -5,8 +5,6 @@
 class Player : public Character
 {
 public:
-	//Player();
 	float health;
-	//vector<Item> inventory;
 	void getInput(InputHandler input);
 };

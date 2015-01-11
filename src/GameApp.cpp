@@ -33,15 +33,16 @@ class GameApp : public AppNative {
 void GameApp::prepareSettings(Settings *settings)
 {
 	settings->setFrameRate(60.0f);
+	settings->setWindowSize(800, 600);
 }
 
 void GameApp::setup()
 {
 	isPaused = false;
-	player.location = Vec2f(100, 100);
+	player.location = Vec2f(400, 300);
 	player.velocity = Vec2f(0, 0);
 	player.acceleration = Vec2f(0, 0);
-	camera.follow(player.location);
+	camera.isFollowing = true;
 
 }
 
@@ -131,6 +132,8 @@ void GameApp::update()
 	if (!isPaused){
 		camera.update();
 		player.update();
+		if (camera.isFollowing)
+			camera.location -= player.velocity;
 	}
 }
 
@@ -138,7 +141,9 @@ void GameApp::draw()
 {
 	gl::clear();
 	player.draw(camera);
-	gl::drawSolidCircle(Vec2f(camera.location.x,camera.location.y), 15.0f);
+	gl::drawSolidCircle(Vec2f(camera.location.x+150,camera.location.y+60), 15.0f);
+	gl::drawSolidCircle(Vec2f(camera.location.x+123, camera.location.y-20), 15.0f);
+	gl::drawSolidCircle(Vec2f(camera.location.x+340, camera.location.y+200), 15.0f);
 	//player.draw(camera);
 }
 

@@ -1,7 +1,6 @@
 #include "cinder/gl/gl.h"
 #include "Camera2D.h"
 
-
 Camera2D::Camera2D(){
 	isPanning = false;
 	isFollowing = false;
@@ -23,11 +22,7 @@ void Camera2D::update()
 			velocity = Vec2f(0, 0);
 		}
 	}
-	
-	else if (isFollowing){
-		//location = targetCharacter.location;
-	}
-	else{
+	else if (!isFollowing){
 		location += velocity;
 	}
 
@@ -46,13 +41,7 @@ void Camera2D::panTo(float newSpeed, Vec2f goToTarget)
 	velocity *= newSpeed;
 	targetRemaining = Vec2f(abs(deltaX),abs(deltaY));
 }
-/*
-void Camera2D::follow(Character goToCharacter)
-{
-	isFollowing = true;
-	targetCharacter = goToCharacter;
-}
-*/
+
 void Camera2D::getInput(InputHandler input)
 {
 	if (isPanning || isFollowing){

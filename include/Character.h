@@ -1,5 +1,4 @@
 #pragma once
-
 #include "cinder/gl/gl.h"
 #include "Camera2D.h"
 using namespace ci;
