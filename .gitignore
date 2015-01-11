@@ -3,3 +3,10 @@ ipch
 *.sdf
 *.suo
 *.user
+*.ilk
+*.exe
+*.tlog
+*.log
+*.ibd
+*.pdb
+*.obj
