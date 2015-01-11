@@ -41,6 +41,7 @@ void GameApp::setup()
 	player.location = Vec2f(100, 100);
 	player.velocity = Vec2f(0, 0);
 	player.acceleration = Vec2f(0, 0);
+	camera.follow(player.location);
 
 }
 
