@@ -7,6 +7,6 @@ ipch
 *.exe
 *.tlog
 *.log
-*.ibd
+*.idb
 *.pdb
 *.obj

@@ -15,7 +15,7 @@ public:
 	Vec2f velocity;
 	Vec2f acceleration;
 	
-	Camera2D shitter;
+	//Camera2D shitter;
 	void update();
 	void draw();
 };
