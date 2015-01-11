@@ -1,4 +1,15 @@
 #include "Player.h"
+#include "cinder/gl/texture.h"
+#include "cinder/ImageIo.h"
+#include "cinder/app/AppNative.h"
+
+
+Player::Player()
+{
+
+	sprite = loadImage(app::loadAsset("logo.png"));
+
+}
 
 void Player::getInput(InputHandler input)
 {
