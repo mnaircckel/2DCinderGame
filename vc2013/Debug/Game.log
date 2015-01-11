@@ -1,0 +1,23 @@
+﻿Build started 1/10/2015 11:03:41 PM.
+     1>Project "C:\Cinder\projects\Game\vc2013\Game.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\include /I..\..\..\\include /I..\..\..\\boost /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D NOMINMAX /D _WIN32_WINNT=0x0502 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\Camera2D.cpp ..\src\Character.cpp ..\src\GameApp.cpp ..\src\Player.cpp
+     1>cl : Command line warning D9030: '/Gm' is incompatible with multiprocessing; ignoring /MP switch
+         GameApp.cpp
+     1>c:\cinder\projects\game\include\character.h(14): error C2146: syntax error : missing ';' before identifier 'shitter'
+     1>c:\cinder\projects\game\include\character.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\cinder\projects\game\src\gameapp.cpp(48): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Character.cpp
+         Camera2D.cpp
+     1>c:\cinder\projects\game\include\character.h(14): error C2146: syntax error : missing ';' before identifier 'shitter'
+     1>c:\cinder\projects\game\include\character.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         Generating Code...
+         Compiling...
+         Player.cpp
+     1>c:\cinder\projects\game\src\player.cpp(32): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+     1>Done Building Project "C:\Cinder\projects\Game\vc2013\Game.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.56
