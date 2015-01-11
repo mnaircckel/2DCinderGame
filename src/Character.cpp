@@ -19,6 +19,6 @@ void Character::update(){
 }
 
 
-void Character::draw(Camera2D camera){
+void Character::draw(){
 	gl::drawSolidCircle(location,15.0f);
 }
