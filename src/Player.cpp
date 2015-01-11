@@ -7,7 +7,10 @@
 Player::Player()
 {
 
-	sprite = loadImage(app::loadAsset("logo.png"));
+	sprite = loadImage(app::loadAsset("doctor.png"));
+	location = Vec2f(400, 300);
+	velocity = Vec2f(0, 0);
+	acceleration = Vec2f(0, 0);
 
 }
 

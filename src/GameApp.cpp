@@ -39,9 +39,6 @@ void GameApp::prepareSettings(Settings *settings)
 void GameApp::setup()
 {
 	isPaused = false;
-	player.location = Vec2f(400, 300);
-	player.velocity = Vec2f(0, 0);
-	player.acceleration = Vec2f(0, 0);
 	camera.isFollowing = true;
 
 }
