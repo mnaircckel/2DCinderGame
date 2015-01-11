@@ -6,6 +6,8 @@ using namespace std;
 
 class InputHandler{
 public:
+	InputHandler();
+
 	bool rightDown;
 	bool leftDown;
 	string lastLeftRight;
@@ -24,5 +26,4 @@ public:
 	bool sDown;
 	string lastWS;
 
-	InputHandler::InputHandler();
 };

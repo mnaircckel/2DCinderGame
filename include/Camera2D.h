@@ -8,6 +8,7 @@ using namespace ci;
 class Camera2D
 {
 public:
+	Camera2D();
 	Vec2f location;
 	Vec2f velocity;
 	Vec2f targetLocation;
@@ -17,7 +18,7 @@ public:
 	bool isPanning;
 	bool isFollowing;
 
-	Camera2D::Camera2D();
+	//Camera2D::Camera2D();
 
 	void panTo(float newSpeed, Vec2f goToLocation);
 	//void follow(Character goToCharacter);
