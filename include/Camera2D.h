@@ -1,6 +1,6 @@
 #pragma once
 #include "cinder/gl/gl.h"
-#include "Character.h"
+//#include "Character.h"
 #include "InputHandler.h"
 
 using namespace ci;
@@ -18,7 +18,6 @@ public:
 	bool isPanning;
 	bool isFollowing;
 
-	//Camera2D::Camera2D();
 
 	void panTo(float newSpeed, Vec2f goToLocation);
 	//void follow(Character goToCharacter);

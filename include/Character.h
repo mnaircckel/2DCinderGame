@@ -1,7 +1,7 @@
 #pragma once
-#include "Camera2D.h"
-#include "cinder/gl/gl.h"
 
+#include "cinder/gl/gl.h"
+#include "Camera2D.h"
 using namespace ci;
 using namespace std;
 
@@ -15,7 +15,6 @@ public:
 	Vec2f velocity;
 	Vec2f acceleration;
 	
-	//Camera2D shitter;
 	void update();
-	void draw();
+	void draw(Camera2D camera);
 };

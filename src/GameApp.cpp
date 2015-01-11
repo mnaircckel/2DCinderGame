@@ -6,6 +6,7 @@
 #include "Player.h"
 #include "Item.h"
 
+
 using namespace ci;
 using namespace ci::app;
 using namespace std;
@@ -135,7 +136,7 @@ void GameApp::update()
 void GameApp::draw()
 {
 	gl::clear();
-	player.draw();
+	player.draw(camera);
 	gl::drawSolidCircle(Vec2f(camera.location.x,camera.location.y), 15.0f);
 	//player.draw(camera);
 }
